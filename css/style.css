@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Mulish:wght@400;700&family=Open+Sans&display=swap');
+
+:root {
+  --purple-dark: #1f1534;
+  --black: #000000;
+  --blue-light: #89c5cc;
+  --gray-blue: #7d7987;
+  --primary-color: #69b99d;
+  --white: #f9f9f9;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(
+    180deg,
+    rgba(227, 255, 248, 0) 0%,
+    rgba(227, 255, 248, 0.38) 100%
+  );
+  font-family: 'Open Sans', sans-serif;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.page {
+  max-width: 80rem;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 39.69rem;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin: 4.06rem auto 6.88rem;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--purple-dark);
+  font-size: 1.125rem;
+  font-family: 'Mulish';
+  opacity: 0.5;
+  transition: 0.4s ease-in;
+}
+
+nav a:hover {
+  font-weight: 700;
+  opacity: 1;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5.8rem;
+}
+
+section h1 {
+  color: var(--black);
+  font-size: 3.0625rem;
+  font-family: 'Mulish';
+  line-height: 3.5rem;
+  max-width: 30.5625rem;
+}
+
+span {
+  color: var(--blue-light);
+  font-weight: 700;
+}
+
+section p {
+  color: var(--gray-blue);
+  font-size: 0.875rem;
+  line-height: 1.75rem;
+  max-width: 27.375rem;
+  margin: 2.5rem auto;
+}
+
+section button {
+  display: inline-flex;
+  height: 3.5rem;
+  padding: 0.875rem 2rem 0.9375rem 2rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border: none;
+  border-radius: 4px;
+  background: var(--primary-color);
+  cursor: pointer;
+  color: var(--white);
+  font-size: 1rem;
+  font-family: 'DM Sans';
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+section button:hover {
+  filter: brightness(1.2) saturate(1.1);
+}
+
+.img-jump {
+  mix-blend-mode: multiply;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.88rem;
+  position: relative;
+}
+
+footer a {
+  color: var(--black);
+  text-decoration: none;
+  font-size: 0.875rem;
+  line-height: 1.75rem;
+  text-align: center;
+  margin: 0 auto;
+}
+
+footer a span {
+  color: var(--black);
+  font-weight: bold;
+}
+
+.balls {
+  position: absolute;
+  right: 0;
+}
